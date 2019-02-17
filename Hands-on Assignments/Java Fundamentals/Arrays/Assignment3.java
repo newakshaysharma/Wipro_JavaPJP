@@ -12,7 +12,7 @@ public class Assignment3 {
 		if(index!=-1)
 			System.out.println(index);
 		else
-			System.out.println("-1");
+			System.out.println(index);
 	}
 
 }
