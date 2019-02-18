@@ -40,6 +40,7 @@ public class Assignment10 {
 			}
 			System.out.println();
 		}
+		
 	}
 	
 	
