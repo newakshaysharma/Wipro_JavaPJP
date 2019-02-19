@@ -18,14 +18,13 @@ public class Assignment9 {
 				sum+=array[i];
 			for(i=sevenpos+1;i<len;i++)
 				sum+=array[i];
-			System.out.println(sum);
 		}
 		else
 		{
 			for(i=0;i<len;i++)
 				sum+=array[i];
-			System.out.println(sum);
 		}
+		System.out.println(sum);
 	
 	}
 	
