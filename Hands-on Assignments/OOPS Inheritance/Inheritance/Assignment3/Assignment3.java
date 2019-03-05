@@ -1,14 +1,23 @@
 public class Assignment3 {
 
 	public static void main(String[] args) {
-		Teacher teacher=new Teacher("Anurag Malik",1000000,"Computer Science");
-		CollegeStudent coll=new CollegeStudent("Manpreet Singh",1508210069,2015,"CSE");
+		Person person=new Person("MPS","16 OCT,1997");
 		
-		System.out.println("Teacher info :\nName : "+teacher.getName()+"\nSalary : "+teacher.getSalary()+"\nSubject : "
-						  +teacher.getSubject());
+		Teacher teacher=new Teacher("Anurag Malik","1 Jan,1975",1000000,"Computer Science");
 		
-		System.out.println("Student info :\nName : "+coll.getName()+"\nRoll no. : "+coll.getRollno()+"\nYear : "
-						  +coll.getYear()+"\nMajor : "+coll.getMajor());
+		Student student=new Student("MPS","16 OCT,1997",1508210069);
+		
+		CollegeStudent coll=new CollegeStudent("Manpreet Singh","16 Oct,1997",1508210069,4,"Moradabad Institute of Technology");
+		
+		System.out.println("Person info :\nName : "+person.getName()+"\nD.O.B. : "+person.getDateOfBirth()+"\n");
+		
+		System.out.println("Teacher info :\nName : "+teacher.getName()+"\nD.O.B. : "+teacher.getDateOfBirth()+"\nSalary : "+teacher.getSalary()+"\nSubject : "
+						  +teacher.getSubject()+"\n");
+		
+		System.out.println("Student info :\nName : "+student.getName()+"\nD.O.B. : "+student.getDateOfBirth()+"\nStudent Id : "+student.getStudentId()+"\n");
+		
+		System.out.println("College Student info :\nName : "+coll.getName()+"\nD.O.B. : "+coll.getDateOfBirth()+"\nCollege Student Id : "+coll.getStudentId()+"\nYear : "
+						  +coll.getYear()+"\nCollege : "+coll.getCollegeName());
 		
 	}
 

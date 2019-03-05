@@ -1,13 +1,13 @@
 class Student extends Person
 {
-	private int rollno;
+	private int studentId;
 	
-	Student(String name,int rollno) {
-		super(name);
-		this.rollno = rollno;
+	Student(String name,String dateOfBirth,int studentId) {
+		super(name,dateOfBirth);
+		this.studentId = studentId;
 	}
 
-	public int getRollno() {
-		return rollno;
+	public int getStudentId() {
+		return studentId;
 	}
 }	

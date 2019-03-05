@@ -1,14 +1,14 @@
 public class CollegeStudent extends Student {
 	private int year;
-	private String major;
-	CollegeStudent(String name,int rollno,int year,String major)
+	private String collegeName;
+	CollegeStudent(String name,String dateOfBirth,int studentId,int year,String collegeName)
 	{
-		super(name,rollno);
+		super(name,dateOfBirth,studentId);
 		this.year=year;
-		this.major=major;
+		this.collegeName=collegeName;
 	}
 	
 	public int getYear() { return year; }
 	
-	public String getMajor() {return major; }
+	public String getCollegeName() {return collegeName; }
 }
