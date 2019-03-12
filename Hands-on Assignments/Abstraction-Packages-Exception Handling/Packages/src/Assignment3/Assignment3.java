@@ -1,6 +1,6 @@
 package Assignment3;
 
-import com.automobile.twowheeler.*;;
+import com.automobile.twowheeler.*;
 
 public class Assignment3 {
 	
