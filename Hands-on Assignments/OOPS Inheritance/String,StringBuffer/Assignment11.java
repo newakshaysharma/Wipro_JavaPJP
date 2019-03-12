@@ -16,7 +16,7 @@ public class Assignment11 {
 		{
 			isPresent=true;
 			int index = str1.indexOf(str2);
-			String left=str1.replaceFirst(str2, "");
+			String left=str1.substring(index+str2.length(),str1.length());
 			
 		
 			if(index!=0)
