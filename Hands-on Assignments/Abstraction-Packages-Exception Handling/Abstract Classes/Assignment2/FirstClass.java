@@ -1,7 +1,7 @@
 public class FirstClass extends Compartment{
 
 	@Override
-	public void notice(){
-		System.out.println("Notice : First Compartment");
+	public String notice(){
+		return "Notice : First Compartment";
 	}
 }

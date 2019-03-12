@@ -1,4 +1,4 @@
 public abstract class Compartment{
 
-	public abstract void notice();
+	public abstract String notice();
 }

@@ -1,7 +1,7 @@
 public class General extends Compartment{
 
 	@Override
-	public void notice(){
-		System.out.println("Notice : General Compartment");
+	public String notice(){
+		return "Notice : General Compartment";
 	}
 }

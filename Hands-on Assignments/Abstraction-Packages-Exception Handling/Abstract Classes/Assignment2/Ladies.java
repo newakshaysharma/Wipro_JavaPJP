@@ -1,7 +1,7 @@
 public class Ladies extends Compartment{
 
 	@Override
-	public void notice(){
-		System.out.println("Notice : Ladies Compartment");
+	public String notice(){
+		return "Notice : Ladies Compartment";
 	}
 }

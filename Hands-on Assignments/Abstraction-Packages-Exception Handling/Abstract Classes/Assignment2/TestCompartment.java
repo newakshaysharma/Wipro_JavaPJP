@@ -34,7 +34,7 @@ public class TestCompartment{
 					}
 				
 			}
-			compart[i].notice();
+			System.out.println(compart[i].notice());
 		}
 	}
 }

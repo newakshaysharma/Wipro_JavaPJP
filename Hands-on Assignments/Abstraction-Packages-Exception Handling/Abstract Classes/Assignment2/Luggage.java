@@ -1,7 +1,7 @@
 public class Luggage extends Compartment{
 
 	@Override
-	public void notice(){
-		System.out.println("Notice : Luggage Compartment");
+	public String notice(){
+		return "Notice : Luggage Compartment";
 	}
 }
