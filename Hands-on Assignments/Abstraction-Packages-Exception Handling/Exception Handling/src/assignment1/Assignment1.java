@@ -14,7 +14,7 @@ public class Assignment1 {
 			int i=Integer.parseInt(s);
 			System.out.println("The square value is "+(i*i));
 			System.out.println("The work has been done successfully.");
-		}catch(Exception e){
+		}catch(NumberFormatException e){
 			System.out.println("Entered input is not a valid format for an integer.");
 		}
 		sc.close();
