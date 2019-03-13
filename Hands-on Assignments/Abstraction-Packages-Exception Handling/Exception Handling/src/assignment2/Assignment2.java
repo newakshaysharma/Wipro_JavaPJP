@@ -23,6 +23,6 @@ public class Assignment2 {
 		}catch(ArrayIndexOutOfBoundsException e){
 			System.out.println(e);
 		}
-		
+		sc.close();
 	}
 }
