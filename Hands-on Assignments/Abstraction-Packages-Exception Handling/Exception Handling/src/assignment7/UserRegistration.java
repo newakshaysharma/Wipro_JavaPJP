@@ -17,6 +17,7 @@ public class UserRegistration {
 		}catch(InvalidCountryException ivc){
 			System.out.println(ivc);
 		}
+		sc.close();
 
 	}
 	
