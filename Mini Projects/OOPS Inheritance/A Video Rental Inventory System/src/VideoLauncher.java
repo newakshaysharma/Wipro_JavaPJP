@@ -54,6 +54,7 @@ public class VideoLauncher {
 				store.listInventory();
 				break;
 			case 6:
+				sc.close();
 				System.out.println("\n\nExiting...!!! Thanks for using the application.\n\n");
 				return;
 			default:
