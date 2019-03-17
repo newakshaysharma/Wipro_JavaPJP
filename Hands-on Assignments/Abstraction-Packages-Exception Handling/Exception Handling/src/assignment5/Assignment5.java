@@ -9,6 +9,7 @@ public class Assignment5 {
 		System.out.println("Enter value of a and b.");
 		int a=sc.nextInt();
 		int b=sc.nextInt();
+		sc.close();
 		try{
 			System.out.println("a/b = "+division(a,b));
 		}catch(ArithmeticException ae){
