@@ -16,7 +16,7 @@ public class NegativeValueException extends Exception {
 			System.out.print("Invalid age. ");
 			break;
 		case 4:
-			System.out.print("Invalid monthly. ");
+			System.out.print("Invalid monthly amount. ");
 			break;
 		default:
 			//do nothing
