@@ -24,6 +24,7 @@ public class EmployeeTest {
 	@Test
 	public void testEmployee(){
 		assertEquals("Result","FOUND",e1.findName(namelist,"Singh"));
+		assertEquals("Result","NOT FOUND",e1.findName(namelist,"King"));
 	}
 
 }
