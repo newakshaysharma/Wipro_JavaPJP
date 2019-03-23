@@ -8,6 +8,7 @@ public class FDAccount extends Account {
 	
 	@Override
 	public double calculateInterest() {
+		interestRate=0;
 		if(amount<10000000){
 			
 			if(noOfDays>=7&&noOfDays<=14)

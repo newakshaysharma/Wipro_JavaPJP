@@ -10,7 +10,10 @@ public class RDAccount extends Account {
 	
 	@Override
 	public double calculateInterest() {
-		if(noOfMonths>=6&&noOfMonths<9)
+		interestRate=0;
+		if(noOfMonths<6)
+			interestRate=0;
+		else if(noOfMonths<9)
 			interestRate=7.50;
 		else if(noOfMonths<12)
 			interestRate=7.75;

@@ -3,7 +3,7 @@ package packages.account;
 import exception.NegativeValueException;
 
 public class SBAccount extends Account {
-	private String accounttype;
+	private String accounttype="";
 	
 	@Override
 	public double calculateInterest() {
