@@ -1,5 +1,7 @@
 package packages.account;
 
+import exception.NegativeValueException;
+
 public class SBAccount extends Account {
 	private String accounttype;
 	
@@ -14,13 +16,15 @@ public class SBAccount extends Account {
 	public double getInterestRate() {
 		return interestRate;
 	}
-	public void setInterestRate(double interestRate) {
+	public void setInterestRate(double interestRate)throws NegativeValueException {
+		if(interestRate<0) throw new NegativeValueException(NegativeValueException.invalid_interestrate);
 		this.interestRate = interestRate;
 	}
 	public double getAmount() {
 		return amount;
 	}
-	public void setAmount(double amount) {
+	public void setAmount(double amount)throws NegativeValueException {
+		if(amount<0) throw new NegativeValueException(NegativeValueException.invalid_amount);
 		this.amount = amount;
 	}
 	public String getAccounttype() {

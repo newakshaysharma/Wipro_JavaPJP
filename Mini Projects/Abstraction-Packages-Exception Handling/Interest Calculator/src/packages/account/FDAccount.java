@@ -1,5 +1,7 @@
 package packages.account;
 
+import exception.NegativeValueException;
+
 public class FDAccount extends Account {
 	private int noOfDays;
 	private int ageOfACHolder;
@@ -48,7 +50,8 @@ public class FDAccount extends Account {
 		return interestRate;
 	}
 
-	public void setInterestRate(double interestRate) {
+	public void setInterestRate(double interestRate) throws NegativeValueException {
+		if(interestRate<0) throw new NegativeValueException(NegativeValueException.invalid_interestrate);
 		this.interestRate = interestRate;
 	}
 
@@ -56,7 +59,8 @@ public class FDAccount extends Account {
 		return amount;
 	}
 
-	public void setAmount(double amount) {
+	public void setAmount(double amount) throws NegativeValueException {
+		if(amount<0) throw new NegativeValueException(NegativeValueException.invalid_amount);
 		this.amount = amount;
 	}
 
@@ -64,7 +68,8 @@ public class FDAccount extends Account {
 		return noOfDays;
 	}
 
-	public void setNoOfDays(int noOfDays) {
+	public void setNoOfDays(int noOfDays) throws NegativeValueException {
+		if(noOfDays<0) throw new NegativeValueException(NegativeValueException.invalid_days);
 		this.noOfDays = noOfDays;
 	}
 
@@ -72,7 +77,8 @@ public class FDAccount extends Account {
 		return ageOfACHolder;
 	}
 
-	public void setAgeOfACHolder(int ageOfACHolder) {
+	public void setAgeOfACHolder(int ageOfACHolder)throws NegativeValueException {
+		if(ageOfACHolder<0) throw new NegativeValueException(NegativeValueException.invalid_age);
 		this.ageOfACHolder = ageOfACHolder;
 	}
 

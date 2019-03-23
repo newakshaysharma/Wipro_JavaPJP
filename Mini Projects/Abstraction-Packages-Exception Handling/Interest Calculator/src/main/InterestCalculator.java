@@ -33,17 +33,11 @@ public class InterestCalculator {
 			case 1:
 				SBAccount sb=new SBAccount();
 				while(forexchandle){
+					System.out.print("Enter the averege amount in your account : ");
+					double amt=sc.nextDouble();
 					try{
-						System.out.print("Enter the averege amount in your account : ");
-						double amt=sc.nextDouble();
-						if(amt<0) {
-							throw new NegativeValueException(1);
-						}
-						else
-						{
-							forexchandle=false;
 							sb.setAmount(amt);
-						}
+							forexchandle=false;
 					}catch (NegativeValueException neg) {
 					//nothing to write here
 						}
@@ -73,9 +67,9 @@ public class InterestCalculator {
 					age=sc.nextInt();
 					
 					try{
-						if(fdamt<0) throw new NegativeValueException(1);
-						if(days<0) throw new NegativeValueException(2);
-						if(age<0) throw new NegativeValueException(3);
+						fd.setAmount(fdamt);
+						fd.setAgeOfACHolder(age);
+						fd.setNoOfDays(days);
 						forexchandle=false;
 					}
 					catch(NegativeValueException neg){
@@ -83,9 +77,6 @@ public class InterestCalculator {
 					}
 					
 				}
-				fd.setAmount(fdamt);
-				fd.setAgeOfACHolder(age);
-				fd.setNoOfDays(days);
 				System.out.println("Interest gained : Rs. "+fd.calculateInterest());
 				break;
 				
@@ -108,10 +99,10 @@ public class InterestCalculator {
 					monthlyAmount=sc.nextDouble();
 					
 					try{
-						if(rdamt<0) throw new NegativeValueException(1);
-						if(noofmonths<0) throw new NegativeValueException(2);
-						if(rdage<0) throw new NegativeValueException(3);
-						if(monthlyAmount<0) throw new NegativeValueException(4);
+						rd.setAmount(rdamt);
+						rd.setNoOfMonths(noofmonths);
+						rd.setAgeOfAccHolder(rdage);
+						rd.setMonthlyAmount(monthlyAmount);
 						forexchandle=false;
 					}
 					catch(NegativeValueException neg){
@@ -119,10 +110,7 @@ public class InterestCalculator {
 					}
 					
 				}
-				rd.setAmount(rdamt);
-				rd.setNoOfMonths(noofmonths);
-				rd.setAgeOfAccHolder(rdage);
-				rd.setMonthlyAmount(monthlyAmount);
+				
 				System.out.println("Interest gained : Rs. "+rd.calculateInterest());
 				break;
 				
