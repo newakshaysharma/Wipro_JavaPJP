@@ -21,7 +21,7 @@ public class Assignment1 {
 		char sec=sc.nextLine().toLowerCase().charAt(0);
 		int c=(int)sec;
 		
-		File file=new File("src/assignment1/"+filename);
+		File file=new File(filename);
 		
 		int charcount=0;
 		
