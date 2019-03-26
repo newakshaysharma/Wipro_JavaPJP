@@ -32,6 +32,7 @@ public class Assignment2 {
 		{
 			bw.write(ch);
 		}
+		System.out.println("File is copied.");
 		bw.close();
 		br.close();
 		sc.close();
