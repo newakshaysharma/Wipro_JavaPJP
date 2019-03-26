@@ -22,8 +22,6 @@ public class FileWordCount {
 		String ipfilename=args[0];
 		String opfilename=args[1];
 		
-		
-		System.out.print(ipfilename+"bakbkdbkjd");
 		File ipfile=new File(ipfilename);
 		File opfile=new File(opfilename);
 		
@@ -49,7 +47,7 @@ public class FileWordCount {
 					map.put(word, 1);
 				}
 			}
-		};
+		}
 		
 		for (Entry<String, Integer> entry : map.entrySet()) {
 		    String os=entry.getKey() + ":" + entry.getValue().toString()+System.getProperty("line.separator");
