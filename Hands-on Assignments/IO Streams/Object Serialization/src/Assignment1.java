@@ -40,6 +40,7 @@ public class Assignment1 {
 		FileOutputStream fos=new FileOutputStream("DATA");
 		ObjectOutputStream oos=new ObjectOutputStream(fos);
 		oos.writeObject(emp);
+		oos.flush();
 		oos.close();
 		
 		FileInputStream fis=new FileInputStream("DATA");
