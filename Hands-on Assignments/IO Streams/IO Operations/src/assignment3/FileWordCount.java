@@ -30,7 +30,7 @@ public class FileWordCount {
 		BufferedReader inbr=new BufferedReader(new FileReader(ipfile));
 		BufferedWriter opbw=new BufferedWriter(new FileWriter(opfile));
 		
-		Map<String, Integer> map=new TreeMap<>();
+		Map<String, Integer> map=new TreeMap<String, Integer>();
 		
 		String st;
 		while((st=inbr.readLine())!=null)
