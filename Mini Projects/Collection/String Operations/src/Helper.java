@@ -3,7 +3,11 @@ import java.util.List;
 
 public class Helper {
 	
-	List<String> list;
+	private List<String> list;
+	
+	public List<String> getList() {
+		return list;
+	}
 
 	public Helper() {
 		list=new ArrayList<String>();
