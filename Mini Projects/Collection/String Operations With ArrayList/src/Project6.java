@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Project6 {
 
 	public static void main(String[] args) {
-		String s1,s2;
+		
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter String 1");
-		s1=sc.next();
+		String s1=sc.next();
 		System.out.println("Enter String 2");
-		s2=sc.next();
+		String s2=sc.next();
 		
 		List<String> list=operations(s1,s2);
 		System.out.println(list);
@@ -40,26 +40,21 @@ public class Project6 {
 	}
 	
 	public static String operation2(String s1,String s2){
-		StringBuffer sb=new StringBuffer();
 		if(s1.indexOf(s2)!=s1.lastIndexOf(s2)){
 			String a=s1.substring(0,s1.lastIndexOf(s2));
 			String b=s1.substring(s1.lastIndexOf(s2)+s2.length(),s1.length());
-			sb.append(a+new StringBuffer(s2).reverse()+b);
+			return a+new StringBuffer(s2).reverse()+b;
 		}
-		else sb.append(s1+s2);
-		return sb.toString();
+		else return s1+s2;
 	}
 	
 	public static String operation3(String s1,String s2){
-		StringBuffer sb=new StringBuffer();
 		if(s1.indexOf(s2)!=s1.lastIndexOf(s2)){
-			String t=s1;
 			String a=s1.substring(0,s1.indexOf(s2));
-			String b=t.substring(t.indexOf(s2)+s2.length(),t.length());
-			sb.append(a+b);
+			String b=s1.substring(s1.indexOf(s2)+s2.length(),s1.length());
+			return a+b;
 		}
-		else sb.append(s1);
-		return sb.toString();
+		else return s1;
 	}
 
 	private static String operation4(String s1, String s2) {
