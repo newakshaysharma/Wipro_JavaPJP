@@ -1,16 +1,16 @@
 public class Card {
 
-	private String cardn;
+	private char cardsym;
 	private int cardNo;
-	public Card(String cardn, int cardNo) {
-		this.cardn = cardn;
+	public Card(char cardsym, int cardNo) {
+		this.cardsym = cardsym;
 		this.cardNo = cardNo;
 	}
-	public String getCardn() {
-		return cardn;
+	public char getCardsym() {
+		return cardsym;
 	}
-	public void setCardn(String cardn) {
-		this.cardn = cardn;
+	public void setCardn(char cardsym) {
+		this.cardsym = cardsym;
 	}
 	public int getCardNo() {
 		return cardNo;
