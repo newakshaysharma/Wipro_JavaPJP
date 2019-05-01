@@ -4,12 +4,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Scanner;
 
 public class Assignment4 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		String sql = "";
@@ -47,7 +45,6 @@ public class Assignment4 {
 			e.printStackTrace();
 		}
 		
-		sc.close();
 	}
 
 }
