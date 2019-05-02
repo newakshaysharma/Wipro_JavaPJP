@@ -8,6 +8,7 @@ import java.util.Scanner;
 import com.wipro.sales.bean.Product;
 import com.wipro.sales.bean.Sales;
 import com.wipro.sales.service.Administrator;
+import com.wipro.sales.util.DBUtil;
 
 public class SalesApplication {
 
@@ -75,7 +76,7 @@ public class SalesApplication {
 				break;
 			}
 		} while (choice >= 1 && choice <= 4);
-		
+		DBUtil.closeConnection();
 		sc.close();
 
 	}
