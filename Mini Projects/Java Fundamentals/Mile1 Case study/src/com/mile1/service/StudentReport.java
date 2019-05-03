@@ -26,11 +26,11 @@ public class StudentReport {
 	}
 	
 	public String validate(Student studentObject) throws NullStudentException,NullNameException,NullMarksArrayException{
-		if(studentObject.equals(null))
+		if(studentObject==null)
 			throw new NullStudentException();
 		else {
-			if(studentObject.getName().equals(null)) throw new NullNameException();
-			if(studentObject.getMarks().equals(null)) throw new NullMarksArrayException();
+			if(studentObject.getName()==null) throw new NullNameException();
+			if(studentObject.getMarks()==null) throw new NullMarksArrayException();
 			
 			return findGrade(studentObject);
 		}

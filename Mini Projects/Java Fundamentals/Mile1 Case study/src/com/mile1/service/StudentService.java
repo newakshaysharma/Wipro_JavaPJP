@@ -7,7 +7,10 @@ public class StudentService {
 	public int findNumberOfNullMarks(Student data[]) {
 		int count=0;
 		for(int i=0;i<data.length;i++) {
-			if(data[i].getMarks().equals(null)) {
+			try {
+				data[i].getMarks();
+			}
+			catch (Exception e) {
 				count++;
 			}
 		}
@@ -18,7 +21,10 @@ public class StudentService {
 	public int findNumberOfNullNames(Student data[]) {
 		int count=0;
 		for(int i=0;i<data.length;i++) {
-			if(data[i].getName().equals(null)) {
+			try{
+				data[i].getName();
+			}
+			catch (Exception e) {
 				count++;
 			}
 		}
@@ -29,7 +35,7 @@ public class StudentService {
 	public int findNumberOfNullObjects(Student data[]) {
 		int count=0;
 		for(int i=0;i<data.length;i++) {
-			if(data[i].equals(null)) {
+			if(data[i]==null) {
 				count++;
 			}
 		}
